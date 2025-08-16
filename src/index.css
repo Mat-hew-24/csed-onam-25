@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "MontserratAlternatesBlack";
+  src: url("./assets/MontserratAlternates-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.btn-1 {
+  @apply bg-[#74512d] font-[MontserratAlternatesBlack] cursor-pointer h-16 w-40 text-lg text-[#fffce3] font-bold p-4 ml-5 mr-5 transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#4d3925];
+}
+
+.btn-2 {
+  @apply bg-[#fffce3] font-[MontserratAlternatesBlack] cursor-pointer text-lg h-16 w-40 border-[#74512D] border-2 text-[#74512D] font-bold p-4 ml-5 mr-5 transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#fffab3];
+}
