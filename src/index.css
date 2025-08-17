@@ -40,6 +40,7 @@ body {
   line-height: 100%;
   letter-spacing: 15%;
   text-align: center;
+  white-space: nowrap;
 }
 .para-2 {
   width: 1310px;
@@ -122,4 +123,65 @@ body {
   gap: 37px;
   angle: 0 deg;
   opacity: 1;
+}
+
+.headerBullet {
+  width: 12;
+  height: 29;
+  angle: 0 deg;
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 15%;
+  text-align: center;
+  color: #74512d;
+}
+
+.headerBox {
+  height: 118px;
+  gap: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollContent {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Small screens: apply animation */
+@media (max-width: 768px) {
+  .scrollContent {
+    animation: scrolling2 8s linear infinite;
+  }
+}
+
+@media (max-width: 1300px) {
+  .para-1 {
+    animation: scrolling1 8s linear infinite;
+  }
+}
+
+@keyframes scrolling1 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes scrolling2 {
+  from {
+    transform: translateX(-130%);
+  }
+  to {
+    transform: translateX(130%);
+  }
 }
