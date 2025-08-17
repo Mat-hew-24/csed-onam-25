@@ -1,11 +1,15 @@
 import "./App.css";
+import "./index.css";
+import "./styles/Scrollbar.css";
+import Header from "./components/Header.jsx"
 
 function App() {
   return (
     <>
-      <div className="bg-red-500">Hello</div>
+    <Header />
     </>
   );
 }
 
 export default App;
+
