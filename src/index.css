@@ -168,6 +168,12 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .para-1 {
+    animation: scrolling3 8s linear infinite;
+  }
+}
+
 @keyframes scrolling1 {
   from {
     transform: translateX(-100%);
@@ -183,5 +189,14 @@ body {
   }
   to {
     transform: translateX(130%);
+  }
+}
+
+@keyframes scrolling3 {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(150%);
   }
 }
