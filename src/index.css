@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 @font-face {
   font-family: "MontserratAlternatesBlack";
   src: url("./assets/MontserratAlternates-Black.ttf") format("truetype");
@@ -29,6 +38,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 .para-1 {
@@ -41,6 +51,7 @@ body {
   letter-spacing: 15%;
   text-align: center;
   white-space: nowrap;
+  will-change: transform;
 }
 .para-2 {
   width: 1310px;
@@ -148,11 +159,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  position: relative;
 }
 
 .scrollContent {
   white-space: nowrap;
   display: inline-block;
+  will-change: transform;
 }
 
 /* Small screens: apply animation */
@@ -171,6 +185,25 @@ body {
 @media (max-width: 768px) {
   .para-1 {
     animation: scrolling3 8s linear infinite;
+  }
+}
+
+/* Extra narrow screens like Galaxy Fold Z */
+@media (max-width: 344px) {
+  .scrollContent {
+    animation: scrolling4 6s linear infinite;
+  }
+  
+  .para-1 {
+    animation: scrolling4 6s linear infinite;
+  }
+  
+  .headerBox {
+    overflow: hidden !important;
+  }
+  
+  body {
+    overflow-x: hidden !important;
   }
 }
 
@@ -198,5 +231,14 @@ body {
   }
   to {
     transform: translateX(150%);
+  }
+}
+
+@keyframes scrolling4 {
+  from {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(80%);
   }
 }
