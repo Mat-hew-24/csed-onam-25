@@ -193,15 +193,15 @@ body {
   .scrollContent {
     animation: scrolling4 6s linear infinite;
   }
-  
+
   .para-1 {
     animation: scrolling4 6s linear infinite;
   }
-  
+
   .headerBox {
     overflow: hidden !important;
   }
-  
+
   body {
     overflow-x: hidden !important;
   }
