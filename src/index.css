@@ -26,7 +26,8 @@ html {
 
 .box {
   background: url("/0373552a427515477f5ee654a42f6a5eb549e230.png");
-  background-size: contain;
+  background-size: 512px 768px;
+  background-repeat: repeat;
 }
 
 #root {
