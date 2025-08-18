@@ -1,1 +1,199 @@
 @import "tailwindcss";
+@import "tailwindcss";
+
+@font-face {
+  font-family: "MontserratAlternatesBlack";
+  src: url("./assets/MontserratAlternates-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+.btn-1 {
+  @apply bg-[#74512d] font-[MontserratAlternatesBlack] cursor-pointer pt-[14px] pb-[14px] pr-[20px] pl-[20px] h-[52px] w-[154px] text-lg text-[#fffce3] border-3 border-[#fffce3] font-bold ml-5 mr-5 transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#85623E];
+  
+}
+
+.btn-2 {
+  @apply bg-[#fffce3] font-[MontserratAlternatesBlack] cursor-pointer text-lg pt-[14px] pb-[14px] pr-[20px] pl-[20px] h-[52px] w-[177px] border-[#74512D] border-3 text-[#74512D] font-bold ml-5 mr-5 transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#fffab3];
+}
+
+.box {
+  background: url("/0373552a427515477f5ee654a42f6a5eb549e230.png");
+  background-size: contain;
+}
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.para-1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 15%;
+  text-align: center;
+}
+.para-2 {
+  width: 1310px;
+  height: 360px;
+  angle: 0 deg;
+  opacity: 1;
+}
+
+.para-2-text {
+  width: 930px;
+  height: 216px;
+  angle: 0 deg;
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 24px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.para-2 h1 {
+  width: 500px;
+  height: 58px;
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+}
+
+.para-3 {
+  width: 1310px;
+  height: 342px;
+  gap: 20px;
+  opacity: 1;
+}
+
+.para-3-text {
+  width: 930px;
+  height: 216px;
+  opacity: 1;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-style: Normal;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: -30px;
+}
+
+.para-3 h1 {
+  width: 221px;
+  height: 58px;
+  angle: 0 deg;
+  opacity: 1;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.para-4 {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  height: 24px;
+  angle: 0 deg;
+  opacity: 1;
+}
+.onam {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Italic;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.para-5 {
+  gap: 37px;
+  angle: 0 deg;
+  opacity: 1;
+}
+
+.onam-box {
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;    /* ← align children to the left */
+  justify-content: space-between; /* top content at top, buttons at bottom */
+  text-align: left;           /* text inside <p> is left-aligned */
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 1079px;              /* add units */
+  height: 454px;              /* add units */
+}
+
+
+.title {
+  font-size: 24px;      /* adjust to match Figma text */
+  margin-bottom: 10px;
+}
+
+.event-name {
+  font-size: 72px;      /* adjust to match Figma size */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: url('../public/MontserratAlternates-Black.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+.csea {
+    font-family: 'MontserratAlternates', Courier;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--brown, #74512D);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center; /* centers buttons horizontally */
+  gap: 1rem;              /* adds spacing */
+}
+
+.schedule{
+  width: 1310;
+height: 342;
+angle: 0 deg;
+opacity: 1;
+gap: 20px;
+font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+}

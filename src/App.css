@@ -40,9 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
 .headers-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;  
+  display: flex;                /* enable flexbox */
+  justify-content: center;      /* center horizontally */
+  align-items: center;          /* center vertically */
+  gap: 8px;                     /* space between items */
+  height: 100vh;                /* full viewport height */
+  background-color: #fff;       /* optional: background color */
 }

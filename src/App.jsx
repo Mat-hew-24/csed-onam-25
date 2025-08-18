@@ -1,12 +1,12 @@
 import "./App.css";
-import "./index.css";
-import "./styles/Scrollbar.css";
-import Header from "./components/Header.jsx"
+import Content from "./Content";
+import Csedpresents from "./Csedpresents";
 
 function App() {
   return (
     <>
-    <Header />
+    <Csedpresents></Csedpresents>
+      {/* <Content></Content> */}
     </>
   );
 }
