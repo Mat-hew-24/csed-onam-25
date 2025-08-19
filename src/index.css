@@ -217,6 +217,18 @@ body {
   will-change: transform;
 }
 
+.canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: beige; */
+  width: 100%;
+  height: 60vh; /* or use vh */
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
 /*animation smoothened?*/
 @media (max-width: 1200px) {
   .para-1 {
@@ -226,6 +238,9 @@ body {
 
 /* this one for tab */
 @media (max-width: 900px) {
+  .canvas {
+    height: 20vh;
+  }
   .scrollContent {
     animation: scrolling2 8s linear infinite;
   }
@@ -319,18 +334,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
-}
-
-.canvas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: beige; */
-  width: 100%;
-  height: 60vh; /* or use vh */
-  position: relative;
-  padding: 0px;
-  margin: 0px;
 }
 
 @keyframes scrolling1 {

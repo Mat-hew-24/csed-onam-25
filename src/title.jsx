@@ -31,9 +31,10 @@ export default function Title() {
 
           // P.createCanvas(2000, 800);
 
-          if (sketchRef.current.offsetWidth < 400) {
-            vs = 6;
-            ts = 8;
+          if (sketchRef.current.offsetWidth < 768) {
+            vs = 5;
+            ts = 7;
+            console.log("small screen");
           }
 
           P.pixelDensity(1);
