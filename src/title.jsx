@@ -26,11 +26,13 @@ export default function Title() {
 
           // Dynamically adjust vs and ts based on canvas size and pixel density
           if (w < 768) {
-            vs = Math.max(4, Math.floor(w / 80));
-            ts = Math.max(6, Math.floor(w / 64));
+            // vs = Math.max(4, Math.floor(w / 80));
+            // ts = Math.max(6, Math.floor(w / 64));
+            vs = 4;
+            ts = 7;
           } else {
-            vs = Math.max(8, Math.floor(w / 160));
-            ts = Math.max(10, Math.floor(w / 128));
+            vs = 8;
+            ts = 10;
           }
           P.createCanvas(w, h);
           // Set pixel density to devicePixelRatio for crispness
@@ -52,11 +54,16 @@ export default function Title() {
 
           // Recalculate vs and ts
           if (w < 768) {
-            vs = Math.max(10, Math.floor(w / 80));
-            ts = Math.max(5, Math.floor(w / 64));
+            // vs = Math.max(4, Math.floor(w / 80));
+            // ts = Math.max(6, Math.floor(w / 64));
+            vs = 4;
+            ts = 7;
           } else {
-            vs = Math.max(10, Math.floor(w / 160));
-            ts = Math.max(10, Math.floor(w / 128));
+            vs = 8;
+            ts = 10;
+
+            // vs = Math.max(8, Math.floor(w / 160));
+            // ts = Math.max(10, Math.floor(w / 128));
           }
 
           // Resize the image again to match new scale
@@ -87,9 +94,9 @@ export default function Title() {
                 let q = P.floor(P.map(bright, 0, 255, Cset.length, 0));
                 P.fill(177, 129, 16);
                 P.noStroke();
-                P.textFont("Verdana", 9);
+                // P.textFont("Verdana", ts);
                 P.textStyle(P.BOLD);
-                // P.textSize(ts);
+                P.textSize(ts);
 
                 let txt = "";
                 if (Cset[q] === "#") {
