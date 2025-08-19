@@ -26,9 +26,15 @@ export default function Content() {
           </span>
         </div>
         <div className="para-5 flex justify-center flex-wrap">
-          <button className="btn-1">instagram</button>
-          <button className="btn-1">youtube</button>
-          <button className="btn-1">minerva</button>
+          <button className="btn-1 flex justify-center items-center">
+            instagram
+          </button>
+          <button className="btn-1 flex justify-center items-center">
+            youtube
+          </button>
+          <button className="btn-1 flex justify-center items-center ">
+            minerva
+          </button>
         </div>
       </div>
     </>

@@ -23,6 +23,7 @@ html {
   height: clamp(40px, 8vw, 52px);
   width: clamp(120px, 20vw, 154px);
   font-size: clamp(14px, 2.5vw, 18px);
+  white-space: nowrap;
 }
 
 .btn-2 {
@@ -31,12 +32,14 @@ html {
   height: clamp(40px, 8vw, 52px);
   width: clamp(120px, 20vw, 154px);
   font-size: clamp(14px, 2.5vw, 18px);
+  white-space: nowrap;
 }
 
 .box {
   background: url("/0373552a427515477f5ee654a42f6a5eb549e230.png");
   background-size: 512px 768px;
   background-repeat: repeat;
+  position: relative;
 }
 
 #root {
@@ -291,6 +294,31 @@ body {
     align-items: center;
     gap: clamp(5px, 1vw, 8px);
   }
+}
+
+/* .onam-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  margin: 0 auto;
+  padding: 10px;
+  width: 1079px;
+  height: 454px;
+} */
+.csea {
+  font-family: "MontserratAlternatesBlack";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 100%;
+  color: var(--brown, #74512d);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 @keyframes scrolling1 {
