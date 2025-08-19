@@ -321,6 +321,18 @@ body {
   gap: 1rem;
 }
 
+.canvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: beige; */
+  width: 100%;
+  height: 60vh; /* or use vh */
+  position: relative;
+  padding: 0px;
+  margin: 0px;
+}
+
 @keyframes scrolling1 {
   from {
     transform: translateX(-120%);
