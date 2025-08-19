@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/*WO*/
 html {
   overflow-x: hidden;
   max-width: 100vw;
@@ -17,11 +18,19 @@ html {
 }
 
 .btn-1 {
-  @apply bg-[#74512d] font-[MontserratAlternatesBlack] cursor-pointer pt-[14px] pb-[36px] pr-[20px] pl-[20px] h-[52px] w-[154px] text-lg text-[#fffce3] border-3 border-[#fffce3] font-bold ml-5 mr-5 transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#85623E];
+  @apply bg-[#74512d] font-[MontserratAlternatesBlack] cursor-pointer text-lg text-[#fffce3] border-3 border-[#fffce3] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#85623E];
+  padding: clamp(8px, 2vw, 14px) clamp(12px, 3vw, 20px);
+  height: clamp(40px, 8vw, 52px);
+  width: clamp(120px, 20vw, 154px);
+  font-size: clamp(14px, 2.5vw, 18px);
 }
 
 .btn-2 {
-  @apply bg-[#fffce3] flex justify-center items-center font-[MontserratAlternatesBlack] cursor-pointer text-lg pt-[14px] pb-[14px] pr-[20px] pl-[20px] h-[52px] w-[154px] border-[#74512D] border-3 text-[#74512D] font-bold ml-5 mr-5 transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#fffab3];
+  @apply bg-[#fffce3] flex justify-center items-center font-[MontserratAlternatesBlack] cursor-pointer border-[#74512D] border-3 text-[#74512D] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#fffab3];
+  padding: clamp(8px, 2vw, 14px) clamp(12px, 3vw, 20px);
+  height: clamp(40px, 8vw, 52px);
+  width: clamp(120px, 20vw, 154px);
+  font-size: clamp(14px, 2.5vw, 18px);
 }
 
 .box {
@@ -55,71 +64,106 @@ body {
   will-change: transform;
 }
 .para-2 {
-  width: 1310px;
-  height: 360px;
-  angle: 0 deg;
+  width: 100%;
+  max-width: 1310px;
+  height: auto;
+  min-height: 360px;
   opacity: 1;
 }
 
 .para-2-text {
-  width: 930px;
-  height: 216px;
-  angle: 0 deg;
+  width: 100%;
+  max-width: 930px;
+  height: auto;
+  min-height: 216px;
   opacity: 1;
   font-family: Inter;
   font-weight: 400;
   font-style: Regular;
-  font-size: 24px;
-  leading-trim: NONE;
+  font-size: clamp(18px, 3vw, 24px);
   line-height: 150%;
   letter-spacing: 0%;
 }
 
 .para-2 h1 {
-  width: 500px;
-  height: 58px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  min-height: 58px;
   opacity: 1;
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
-  font-size: 48px;
+  font-size: clamp(32px, 6vw, 48px);
+}
+
+.para-2 div {
+  justify-content: space-between;
 }
 
 .para-3 {
-  width: 1310px;
-  height: 342px;
+  width: 100%;
+  max-width: 1310px;
+  height: auto;
+  min-height: 342px;
   gap: 20px;
-  angle: 0 deg;
   opacity: 1;
 }
 
 .para-3 h1 {
-  width: 221px;
-  height: 58px;
-  angle: 0 deg;
+  width: 100%;
+  max-width: 221px;
+  height: auto;
+  min-height: 58px;
   opacity: 1;
   font-family: Inter;
   font-weight: 700;
   font-style: Bold;
-  font-size: 48px;
-  leading-trim: NONE;
+  font-size: clamp(32px, 6vw, 48px);
   line-height: 100%;
   letter-spacing: 0%;
+}
+
+.para-1 {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: clamp(16px, 3vw, 24px);
+  line-height: 100%;
+  letter-spacing: 15%;
+  text-align: center;
+  white-space: nowrap;
+  will-change: transform;
 }
 
 .para-4 {
   font-family: Inter;
   font-weight: 400;
   font-style: Italic;
-  font-size: 20px;
-  leading-trim: NONE;
+  font-size: clamp(16px, 2.5vw, 20px);
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
-  height: 24px;
-  angle: 0 deg;
+  height: auto;
+  min-height: 24px;
   opacity: 1;
 }
+
+.onam {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Italic;
+  font-size: clamp(16px, 2.5vw, 20px);
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.para-5 {
+  gap: clamp(5px, 2vw, 10px);
+  opacity: 1;
+}
+
 .onam {
   font-family: Inter;
   font-weight: 700;
@@ -132,14 +176,14 @@ body {
 }
 
 .para-5 {
-  gap: 37px;
+  gap: 16px;
   angle: 0 deg;
   opacity: 1;
 }
 
 .headerBullet {
-  width: 12;
-  height: 29;
+  width: 12px;
+  height: 29px;
   angle: 0 deg;
   opacity: 1;
   font-family: Inter;
@@ -170,27 +214,34 @@ body {
   will-change: transform;
 }
 
-/* Small screens: apply animation */
-@media (max-width: 768px) {
-  .scrollContent {
-    animation: scrolling2 8s linear infinite;
-  }
-}
-
-@media (max-width: 1300px) {
+/*animation smoothened?*/
+@media (max-width: 1200px) {
   .para-1 {
     animation: scrolling1 8s linear infinite;
   }
 }
 
-@media (max-width: 768px) {
+/* this one for tab */
+@media (max-width: 900px) {
+  .scrollContent {
+    animation: scrolling2 8s linear infinite;
+  }
+
   .para-1 {
     animation: scrolling3 8s linear infinite;
   }
+
+  .btn-1,
+  .btn-2 {
+    margin: clamp(2px, 1vw, 5px);
+    width: clamp(100px, 25vw, 140px);
+    height: clamp(35px, 7vw, 45px);
+    font-size: clamp(12px, 2vw, 16px);
+  }
 }
 
-/* Extra narrow screens like Galaxy Fold Z */
-@media (max-width: 344px) {
+/* THIS ONE IS SM*/
+@media (max-width: 600px) {
   .scrollContent {
     animation: scrolling4 6s linear infinite;
   }
@@ -201,45 +252,79 @@ body {
 
   .headerBox {
     overflow: hidden !important;
+    height: clamp(80px, 15vw, 118px);
   }
 
   body {
     overflow-x: hidden !important;
   }
+
+  .para-2 {
+    width: 100%;
+    height: auto;
+    padding: clamp(10px, 3vw, 20px);
+  }
+
+  .para-2 div {
+    gap: 25;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .para-2 h1 {
+    font-size: clamp(24px, 5vw, 36px);
+    text-align: center;
+    white-space: nowrap;
+    margin-bottom: clamp(10px, 2vw, 15px);
+  }
+
+  .btn-1,
+  .btn-2 {
+    width: clamp(80px, 30vw, 120px);
+    height: clamp(30px, 6vw, 40px);
+    font-size: clamp(10px, 1.8vw, 14px);
+    margin: clamp(2px, 0.5vw, 3px);
+  }
+
+  .para-5 {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(5px, 1vw, 8px);
+  }
 }
 
 @keyframes scrolling1 {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-120%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(120%);
   }
 }
 
 @keyframes scrolling2 {
   from {
-    transform: translateX(-130%);
+    transform: translateX(-160%);
   }
   to {
-    transform: translateX(130%);
+    transform: translateX(160%);
   }
 }
 
 @keyframes scrolling3 {
   from {
-    transform: translateX(-150%);
+    transform: translateX(-180%);
   }
   to {
-    transform: translateX(150%);
+    transform: translateX(180%);
   }
 }
 
 @keyframes scrolling4 {
   from {
-    transform: translateX(-80%);
+    transform: translateX(-250%);
   }
   to {
-    transform: translateX(80%);
+    transform: translateX(250%);
   }
 }

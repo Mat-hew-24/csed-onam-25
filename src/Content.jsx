@@ -5,19 +5,11 @@ export default function Content() {
         <div className="para-1 text-[#fffce3]">
           VADAMVALI • CHENDAMELAM • PAYASAM • DANCE • ONAKKALI
         </div>
-        <div className="mb-12">
+        <div className="mb-12 para-2">
           <h1>CSEA Onam 2025</h1>
-          <div className="flex justify-center">
-            <div className="flex-1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              voluptatem rem cupiditate labore amet dolorum ullam voluptas
-              soluta nam! Voluptate, magnam error dolores praesentium velit
-              optio iste veritatis laboriosam beatae! Placeat assumenda adipisci
-              amet unde recusandae quisquam, accusantium voluptatem eius, veniam
-              doloremque accusamus sapiente odio sunt quia illo eum. Fugiat in
-              expedita
-            </div>
-            <div className="flex-1">
+          <div className="flex gap-40 flex-wrap-reverse">
+            <div>Lorem ipsum dolor</div>
+            <div>
               <img src="" alt="maveli" />
             </div>
           </div>
@@ -27,7 +19,7 @@ export default function Content() {
           <div className="para-3-text"></div>
         </div>
         <div className="para-4 flex justify-center">
-          <span className="flex-nowrap">
+          <span className="whitespace-nowrap">
             vann<span className="onam">onam</span>, thakarth
             <span className="onam">onam</span>, pwolich
             <span className="onam">onam</span>
