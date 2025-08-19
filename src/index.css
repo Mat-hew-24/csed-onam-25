@@ -234,6 +234,13 @@ body {
   .para-1 {
     animation: scrolling1 8s linear infinite;
   }
+  .fixImg {
+    bottom: -400px;
+  }
+}
+
+.fixImg {
+  bottom: -20px;
 }
 
 /* this one for tab */
@@ -241,6 +248,11 @@ body {
   .canvas {
     height: 20vh;
   }
+
+  .scr {
+    height: 800px;
+  }
+
   .scrollContent {
     animation: scrolling2 8s linear infinite;
   }
@@ -256,12 +268,20 @@ body {
     height: clamp(35px, 7vw, 45px);
     font-size: clamp(12px, 2vw, 16px);
   }
+
+  .fixImg {
+    bottom: -40px;
+  }
 }
 
 /* THIS ONE IS SM*/
 @media (max-width: 600px) {
   .scrollContent {
     animation: scrolling4 6s linear infinite;
+  }
+
+  .scr {
+    height: 700px;
   }
 
   .para-1 {
@@ -308,6 +328,10 @@ body {
     flex-direction: column;
     align-items: center;
     gap: clamp(5px, 1vw, 8px);
+  }
+
+  .fixImg {
+    bottom: -25px;
   }
 }
 

@@ -1,7 +1,7 @@
 export default function Content() {
   return (
     <>
-      <div className="bg-[#74512D] text-white absolute opacity-100 flex flex-col gap-[41px] pt-[32px] pb-[32px] pl-[65px] pr-[65px] bottom-0 left-0 right-0 ">
+      <div className="bg-[#74512D] text-white relative opacity-100 flex flex-col gap-[41px] pt-[32px] pb-[32px] pl-[65px] pr-[65px] bottom-0 left-0 right-0 ">
         <div className="para-1 text-[#fffce3]">
           VADAMVALI • CHENDAMELAM • PAYASAM • DANCE • ONAKKALI
         </div>

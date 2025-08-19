@@ -18,14 +18,6 @@ export default function TitleBox() {
             </button>
           </div>
         </div>
-        <div className="flex absolute sm:-bottom-80 -bottom-65 z-2 justify-end items-end">
-          <img className=" hidden xl:block" src="cseonam-desktop.png"></img>
-          <img className=" sm:hidden" src="cseonam-mobile.png"></img>
-          <img
-            className=" hidden sm:block xl:hidden"
-            src="cseonam-tab.png"
-          ></img>
-        </div>
       </div>
     </>
   );
