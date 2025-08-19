@@ -1,7 +1,7 @@
-export default function images() {
+export default function Images() {
   return (
     <>
-      <div className="flex justify-end items-end bg-red-600">
+      <div className="flex absolute fixImg z-2 ">
         <img className=" hidden xl:block" src="cseonam-desktop.png"></img>
         <img className=" sm:hidden" src="cseonam-mobile.png"></img>
         <img className=" hidden sm:block xl:hidden" src="cseonam-tab.png"></img>

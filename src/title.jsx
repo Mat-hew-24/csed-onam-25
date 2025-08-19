@@ -20,24 +20,21 @@ export default function Title() {
         const Cset = "#";
 
         P.setup = () => {
-          // console.log(
-          //   sketchRef.current.offsetWidth,
-          //   sketchRef.current.offsetHeight
-          // );
-          P.createCanvas(
-            sketchRef.current.offsetWidth,
-            sketchRef.current.offsetHeight
-          );
+          // Use clientWidth/clientHeight for accurate sizing
+          const w = sketchRef.current.clientWidth;
+          const h = sketchRef.current.clientHeight;
 
-          // P.createCanvas(2000, 800);
-
-          if (sketchRef.current.offsetWidth < 768) {
-            vs = 5;
-            ts = 7;
-            console.log("small screen");
+          // Dynamically adjust vs and ts based on canvas size and pixel density
+          if (w < 768) {
+            vs = Math.max(4, Math.floor(w / 80));
+            ts = Math.max(6, Math.floor(w / 64));
+          } else {
+            vs = Math.max(8, Math.floor(w / 160));
+            ts = Math.max(10, Math.floor(w / 128));
           }
-
-          P.pixelDensity(1);
+          P.createCanvas(w, h);
+          // Set pixel density to devicePixelRatio for crispness
+          P.pixelDensity(window.devicePixelRatio || 1);
 
           P.loadImage(imgSrc, (loadedImg) => {
             originalImg = loadedImg;
@@ -47,10 +44,20 @@ export default function Title() {
         };
 
         P.windowResized = () => {
-          P.resizeCanvas(
-            sketchRef.current.offsetWidth,
-            sketchRef.current.offsetHeight
-          );
+          let w = sketchRef.current.clientWidth;
+          let h = sketchRef.current.clientHeight;
+          P.resizeCanvas(w, h);
+
+          P.pixelDensity(window.devicePixelRatio || 1);
+
+          // Recalculate vs and ts
+          if (w < 768) {
+            vs = Math.max(10, Math.floor(w / 80));
+            ts = Math.max(5, Math.floor(w / 64));
+          } else {
+            vs = Math.max(10, Math.floor(w / 160));
+            ts = Math.max(10, Math.floor(w / 128));
+          }
 
           // Resize the image again to match new scale
           if (originalImg) {
@@ -80,15 +87,17 @@ export default function Title() {
                 let q = P.floor(P.map(bright, 0, 255, Cset.length, 0));
                 P.fill(177, 129, 16);
                 P.noStroke();
+                P.textFont("Verdana", 9);
                 P.textStyle(P.BOLD);
-                P.textSize(ts);
+                // P.textSize(ts);
 
                 let txt = "";
                 if (Cset[q] === "#") {
                   txt = P.random([0, 1]);
                 }
 
-                P.text(txt, x * vs + 2, y * vs + 8);
+                // Use integer positions for crisp text
+                P.text(txt, Math.round(x * vs + 2), Math.round(y * vs + 8));
               }
             }
           }
