@@ -1,6 +1,7 @@
 import "./App.css";
 import Content from "./Content";
-import Title from "./title";
+import Header from "./Header";
+import TitleBox from "./TitleBox";
 
 function App() {
   return (
