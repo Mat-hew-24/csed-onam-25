@@ -217,6 +217,10 @@ body {
   will-change: transform;
 }
 
+.fixImg {
+  bottom: -70px;
+}
+
 .canvas {
   display: flex;
   justify-content: center;
@@ -237,10 +241,6 @@ body {
   .fixImg {
     bottom: -400px;
   }
-}
-
-.fixImg {
-  bottom: -20px;
 }
 
 /* this one for tab */
