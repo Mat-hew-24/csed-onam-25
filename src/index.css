@@ -233,13 +233,16 @@ body {
   margin: 0px;
 }
 
+.scr {
+  height: 1536px;
+}
 /*animation smoothened?*/
 @media (max-width: 1200px) {
   .para-1 {
     animation: scrolling1 8s linear infinite;
   }
   .fixImg {
-    bottom: -400px;
+    bottom: -60px;
   }
 }
 

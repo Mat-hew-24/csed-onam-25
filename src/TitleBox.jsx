@@ -4,7 +4,7 @@ export default function TitleBox() {
   return (
     <>
       <div className="mt-32 relative">
-        <div className="onam-box flex flex-col gap-0 justify-center items-center">
+        <div className="onam-box flex flex-col justify-center items-center">
           <div className="flex justify-start w-[100vw] ml-[20vw]">
             <p className="csea text-left">CSEA Presents</p>
           </div>

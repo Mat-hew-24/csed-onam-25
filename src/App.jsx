@@ -7,8 +7,8 @@ import TitleBox from "./TitleBox";
 function App() {
   return (
     <>
-      <div className="relative h-[2059px]">
-        <div className="box w-screen h-[1536px] scr">
+      <div className="relative min-h-screen">
+        <div className="box w-screen scr">
           <Header></Header>
           <TitleBox></TitleBox>
           <Images></Images>
