@@ -26,22 +26,28 @@ export default function Title() {
 
           // Dynamically adjust vs and ts based on canvas size and pixel density
           if (w < 768) {
-            // vs = Math.max(4, Math.floor(w / 80));
-            // ts = Math.max(6, Math.floor(w / 64));
-            vs = 4;
-            ts = 7;
+            // Larger text, closer spacing for small screens
+            vs = 3;
+            ts = 12;
           } else {
-            vs = 8;
-            ts = 10;
+            // Larger text, closer spacing for desktop
+            vs = 4;
+            ts = 16;
           }
           P.createCanvas(w, h);
-          // Set pixel density to devicePixelRatio for crispness
-          P.pixelDensity(window.devicePixelRatio || 1);
+          P.frameRate(24); // Move frameRate to setup
+          // Optimize pixel density for performance (except small screens)
+          if (w < 768) {
+            P.pixelDensity(window.devicePixelRatio || 1); // Keep quality on mobile
+          } else {
+            P.pixelDensity(1); // Reduce computation on desktop
+          }
 
           P.loadImage(imgSrc, (loadedImg) => {
             originalImg = loadedImg;
             img = originalImg.get();
             img.resize(P.width / vs, P.height / vs);
+            img.loadPixels(); // Load pixels once when image is ready
           });
         };
 
@@ -50,40 +56,50 @@ export default function Title() {
           let h = sketchRef.current.clientHeight;
           P.resizeCanvas(w, h);
 
-          P.pixelDensity(window.devicePixelRatio || 1);
+          // Optimize pixel density for performance (except small screens)
+          if (w < 768) {
+            P.pixelDensity(window.devicePixelRatio || 1); // Keep quality on mobile
+          } else {
+            P.pixelDensity(1); // Reduce computation on desktop
+          }
 
           // Recalculate vs and ts
           if (w < 768) {
-            // vs = Math.max(4, Math.floor(w / 80));
-            // ts = Math.max(6, Math.floor(w / 64));
-            vs = 4;
-            ts = 7;
+            // Larger text, closer spacing for small screens
+            vs = 3;
+            ts = 12;
           } else {
-            vs = 8;
-            ts = 10;
-
-            // vs = Math.max(8, Math.floor(w / 160));
-            // ts = Math.max(10, Math.floor(w / 128));
+            // Larger text, closer spacing for desktop
+            vs = 4;
+            ts = 16;
           }
 
           // Resize the image again to match new scale
           if (originalImg) {
             img = originalImg.get();
             img.resize(P.width / vs, P.height / vs);
+            img.loadPixels(); // Load pixels after resize
           }
         };
 
         P.draw = () => {
-          P.frameRate(8);
           P.background(255, 0);
           P.clear();
 
           if (!img) return; // 🚨 wait until image is ready
 
-          img.loadPixels();
+          // Get current width to determine processing strategy
+          const currentW = sketchRef.current.clientWidth;
+          const step = currentW < 768 ? 2 : 3; // Increased step size for better performance
 
-          for (let y = 0; y < img.height; y++) {
-            for (let x = 0; x < img.width; x++) {
+          // Set text properties once outside the loop
+          P.fill(177, 129, 16);
+          P.noStroke();
+          P.textStyle(P.BOLD);
+          P.textSize(ts);
+
+          for (let y = 0; y < img.height; y += step) {
+            for (let x = 0; x < img.width; x += step) {
               const ind = (x + y * img.width) * 4;
               const r = img.pixels[ind + 0];
               const g = img.pixels[ind + 1];
@@ -92,11 +108,6 @@ export default function Title() {
 
               if (Cset.length > 0) {
                 let q = P.floor(P.map(bright, 0, 255, Cset.length, 0));
-                P.fill(177, 129, 16);
-                P.noStroke();
-                // P.textFont("Verdana", ts);
-                P.textStyle(P.BOLD);
-                P.textSize(ts);
 
                 let txt = "";
                 if (Cset[q] === "#") {
@@ -104,7 +115,7 @@ export default function Title() {
                 }
 
                 // Use integer positions for crisp text
-                P.text(txt, Math.round(x * vs + 2), Math.round(y * vs + 8));
+                P.text(txt, (x * vs + 2) | 0, (y * vs + 8) | 0);
               }
             }
           }
@@ -122,8 +133,8 @@ export default function Title() {
   }, []);
 
   return (
-    <>
-      <div ref={sketchRef} className="canvas"></div>
-    </>
+    <div className="flex justify-center items-center">
+      <div ref={sketchRef} className="canvas canvas-scr"></div>
+    </div>
   );
 }
