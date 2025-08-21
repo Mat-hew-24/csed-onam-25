@@ -8,7 +8,9 @@ export default function TitleBox() {
           <div className="flex justify-start w-[100vw] ml-[20vw]">
             <p className="csea text-left">CSEA Presents</p>
           </div>
-          <Title />
+          <div className="bg-red-500">
+            <Title></Title>
+          </div>
           <div className="buttons">
             <button className="btn-1 flex justify-center items-center">
               contribute

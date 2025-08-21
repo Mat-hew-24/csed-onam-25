@@ -29,57 +29,57 @@ export default function Content() {
             </div>
           </div>
         </div>
-        <div className="para-3 bg-red-600 mt-10">
+        <div className="para-3">
           <h1 className="text-[#fffce3]">Schedule</h1>
-          <div className="flex justify-between gap-20 items-center scr-wrap">
+          <div className="flex justify-between items-center scr-wrap">
             <div className="flex flex-col">
-              <span>Inauguration Ceremony</span>
-              <div>
-                <span>Lighting of the lamp</span>
-                <span> Traditional invocation song or prayer</span>
-                <span> Welcome speech </span>
+              <span className="schedule-headings">Inauguration Ceremony</span>
+              <div className="flex flex-col ">
+                <li>Lighting of the lamp</li>
+                <li> Traditional invocation song or prayer</li>
+                <li> Welcome speech </li>
               </div>
               <div>
-                <span>Cultural Programs</span>
-                <div>
-                  <span>
+                <span className="schedule-headings">Cultural Programs</span>
+                <div className="flex flex-col">
+                  <li>
                     9:30 AM – 10:30 AM | Thiruvathira Kali (Traditional Dance)
-                  </span>
-                  <span>10:30 AM – 11:00 AM | Onappattu (Onam Songs)</span>
-                  <span>
+                  </li>
+                  <li>10:30 AM – 11:00 AM | Onappattu (Onam Songs)</li>
+                  <li>
                     11:00 AM – 12:00 PM | Skits, Drama, or Mime Stories of
                     Mahabali & Vamana or humorous short plays
-                  </span>
-                  <span>12:00 PM – 12:30 PM | Games</span>
+                  </li>
+                  <li>12:00 PM – 12:30 PM | Games</li>
                 </div>
               </div>
             </div>
             <div className="flex flex-col">
-              <span>Inauguration Ceremony</span>
-              <div>
-                <span>Lighting of the lamp</span>
-                <span> Traditional invocation song or prayer</span>
-                <span> Welcome speech </span>
+              <span className="schedule-headings">Inauguration Ceremony</span>
+              <div className="flex flex-col">
+                <li>Lighting of the lamp</li>
+                <li> Traditional invocation song or prayer</li>
+                <li> Welcome speech </li>
               </div>
               <div>
-                <span>Cultural Programs</span>
-                <div>
-                  <span>
+                <span className="schedule-headings">Cultural Programs</span>
+                <div className="flex flex-col">
+                  <li>
                     9:30 AM – 10:30 AM | Thiruvathira Kali (Traditional Dance)
-                  </span>
-                  <span>10:30 AM – 11:00 AM | Onappattu (Onam Songs)</span>
-                  <span>
+                  </li>
+                  <li>10:30 AM – 11:00 AM | Onappattu (Onam Songs)</li>
+                  <li>
                     11:00 AM – 12:00 PM | Skits, Drama, or Mime Stories of
                     Mahabali & Vamana or humorous short plays
-                  </span>
-                  <span>12:00 PM – 12:30 PM | Games</span>
+                  </li>
+                  <li>12:00 PM – 12:30 PM | Games</li>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="para-4 flex justify-center">
-          <span className="whitespace-nowrap">
+          <span className="quote-wrap">
             vann<span className="onam">onam</span>, thakarth
             <span className="onam">onam</span>, pwolich
             <span className="onam">onam</span>

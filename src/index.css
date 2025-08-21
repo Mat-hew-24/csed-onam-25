@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import "tailwindcss";
 
 * {
@@ -10,29 +12,26 @@ html {
   max-width: 100vw;
 }
 
-@font-face {
-  font-family: "MontserratAlternatesBlack";
-  src: url("./assets/MontserratAlternates-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
 .btn-1 {
-  @apply bg-[#74512d] font-[MontserratAlternatesBlack] cursor-pointer text-lg text-[#fffce3] border-3 border-[#fffce3] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#85623E];
+  @apply bg-[#74512d] cursor-pointer text-lg text-[#fffce3] border-3 border-[#fffce3] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#85623E];
   padding: clamp(8px, 2vw, 14px) clamp(12px, 3vw, 20px);
   height: clamp(40px, 8vw, 52px);
   width: clamp(120px, 20vw, 154px);
   font-size: clamp(14px, 2.5vw, 18px);
   white-space: nowrap;
+  font-family: "Montserrat Alternates";
+  font-weight: 900;
 }
 
 .btn-2 {
-  @apply bg-[#fffce3] flex justify-center items-center font-[MontserratAlternatesBlack] cursor-pointer border-[#74512D] border-3 text-[#74512D] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#fffab3];
+  @apply bg-[#fffce3] flex justify-center items-center cursor-pointer border-[#74512D] border-3 text-[#74512D] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#fffab3];
   padding: clamp(8px, 2vw, 14px) clamp(12px, 3vw, 20px);
   height: clamp(40px, 8vw, 52px);
   width: clamp(120px, 20vw, 154px);
   font-size: clamp(14px, 2.5vw, 18px);
   white-space: nowrap;
+  font-family: "Montserrat Alternates";
+  font-weight: 900;
 }
 
 .box {
@@ -55,7 +54,7 @@ body {
 }
 
 .para-1 {
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 600;
   font-style: Semi Bold;
   font-size: 24px;
@@ -80,7 +79,7 @@ body {
   height: auto;
   min-height: 216px;
   opacity: 1;
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 400;
   font-style: Regular;
   font-size: clamp(18px, 3vw, 24px);
@@ -94,7 +93,7 @@ body {
   height: auto;
   min-height: 58px;
   opacity: 1;
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 700;
   font-style: Bold;
   font-size: clamp(32px, 6vw, 48px);
@@ -106,7 +105,7 @@ body {
 
 .para-3 {
   width: 100%;
-  max-width: 1310px;
+  max-width: 1600px;
   height: auto;
   min-height: 342px;
   gap: 20px;
@@ -119,7 +118,7 @@ body {
   height: auto;
   min-height: 58px;
   opacity: 1;
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 700;
   font-style: Bold;
   font-size: clamp(32px, 6vw, 48px);
@@ -128,7 +127,7 @@ body {
 }
 
 .para-1 {
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 600;
   font-style: Semi Bold;
   font-size: clamp(16px, 3vw, 24px);
@@ -140,7 +139,7 @@ body {
 }
 
 .para-4 {
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 400;
   font-style: Italic;
   font-size: clamp(16px, 2.5vw, 20px);
@@ -152,8 +151,12 @@ body {
   opacity: 1;
 }
 
+.quotewrap {
+  white-space: nowrap;
+}
+
 .onam {
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 700;
   font-style: Italic;
   font-size: clamp(16px, 2.5vw, 20px);
@@ -168,7 +171,7 @@ body {
 }
 
 .onam {
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 700;
   font-style: Italic;
   font-size: 20px;
@@ -189,7 +192,7 @@ body {
   height: 29px;
   angle: 0 deg;
   opacity: 1;
-  font-family: Inter;
+  font-family: "Inter";
   font-weight: 600;
   font-style: Semi Bold;
   font-size: 24px;
@@ -227,7 +230,7 @@ body {
   align-items: center;
   /* background-color: beige; */
   width: 100vw;
-  height: 70vh; /* or use vh */
+  height: 65vh; /* or use vh */
   position: relative;
   padding: 0px;
   margin: 0px;
@@ -235,6 +238,11 @@ body {
 
 .scr {
   height: 1536px;
+}
+
+.schedule-headings {
+  font-family: "Inter";
+  font-weight: 700;
 }
 /*animation smoothened?*/
 @media (max-width: 1200px) {
@@ -285,6 +293,18 @@ body {
 
   .scr {
     height: 700px;
+  }
+
+  .quotewrap {
+    white-space: normal;
+  }
+
+  .scr-wrap {
+    flex-wrap: wrap;
+  }
+
+  .scr-wrap-rev {
+    flex-wrap: wrap-reverse;
   }
 
   .para-1 {
@@ -349,7 +369,7 @@ body {
   height: 454px;
 } */
 .csea {
-  font-family: "MontserratAlternatesBlack";
+  font-family: "Montserrat Alternates";
   font-weight: 600;
   font-style: normal;
   font-size: 32px;
@@ -361,6 +381,14 @@ body {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+@media (max-width: 300px) {
+  .para-2 h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 @keyframes scrolling1 {
