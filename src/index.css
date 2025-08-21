@@ -12,6 +12,10 @@ html {
   max-width: 100vw;
 }
 
+.canvas-scr {
+  background-color: aquamarine;
+}
+
 .btn-1 {
   @apply bg-[#74512d] cursor-pointer text-lg text-[#fffce3] border-3 border-[#fffce3] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#85623E];
   padding: clamp(8px, 2vw, 14px) clamp(12px, 3vw, 20px);
@@ -230,14 +234,14 @@ body {
   align-items: center;
   /* background-color: beige; */
   width: 100vw;
-  height: 65vh; /* or use vh */
+  height: 60vh; /* Changed from 65vh to 50vh */
   position: relative;
   padding: 0px;
   margin: 0px;
 }
 
 .scr {
-  height: 1536px;
+  height: 1300px;
 }
 
 .schedule-headings {
@@ -257,7 +261,7 @@ body {
 /* this one for tab */
 @media (max-width: 768px) {
   .canvas {
-    height: 20vh;
+    height: 30vh; /* Changed from 20vh to 30vh */
   }
 
   .scr {
