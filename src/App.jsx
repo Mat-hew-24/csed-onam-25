@@ -3,6 +3,7 @@ import Content from "./Content";
 import Header from "./Header";
 import Images from "./Images";
 import TitleBox from "./TitleBox";
+import Venue from "./Venue";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <div className="box w-screen scr">
           <Header></Header>
           <TitleBox></TitleBox>
+          <Venue></Venue>
           <Images></Images>
         </div>
         <Content></Content>

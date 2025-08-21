@@ -12,10 +12,6 @@ html {
   max-width: 100vw;
 }
 
-.canvas-scr {
-  background-color: aquamarine;
-}
-
 .btn-1 {
   @apply bg-[#74512d] cursor-pointer text-lg text-[#fffce3] border-3 border-[#fffce3] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#85623E];
   padding: clamp(8px, 2vw, 14px) clamp(12px, 3vw, 20px);
@@ -174,6 +170,13 @@ body {
   opacity: 1;
 }
 
+.venue {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 24px;
+  color: #74512d;
+}
+
 .onam {
   font-family: "Inter";
   font-weight: 700;
@@ -261,11 +264,20 @@ body {
 /* this one for tab */
 @media (max-width: 768px) {
   .canvas {
-    height: 30vh; /* Changed from 20vh to 30vh */
+    height: 40vh; /* Changed from 20vh to 30vh */
+  }
+
+  .venue {
+    flex-direction: column;
+    bottom: 0px;
   }
 
   .scr {
-    height: 800px;
+    height: 1100px;
+  }
+
+  .venue {
+    bottom: 300px;
   }
 
   .scrollContent {
@@ -296,7 +308,7 @@ body {
   }
 
   .scr {
-    height: 700px;
+    height: 1000px;
   }
 
   .quotewrap {
