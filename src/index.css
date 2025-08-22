@@ -319,6 +319,10 @@ body {
     height: 20vh;
   }
 
+  .content-scr {
+    padding: 32px 25px 32px 25px;
+  }
+
   .scrollContent {
     animation: scrolling4 6s linear infinite;
   }
@@ -408,7 +412,7 @@ body {
   font-family: "Montserrat Alternates";
   font-weight: 600;
   font-style: normal;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 100%;
   color: var(--brown, #74512d);
 }
