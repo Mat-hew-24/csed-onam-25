@@ -276,7 +276,7 @@ body {
 /* this one for tab */
 @media (max-width: 768px) {
   .canvas {
-    height: 20vh; /* Changed from 20vh to 30vh */
+    height: 200px; /* Changed from 20vh to 30vh */
   }
 
   .venue {
@@ -285,7 +285,7 @@ body {
   }
 
   .scr {
-    height: 1100px;
+    height: 1000px;
   }
 
   .venue {
@@ -315,12 +315,16 @@ body {
 
 /* THIS ONE IS SM*/
 @media (max-width: 600px) {
+  .canvas {
+    height: 20vh;
+  }
+
   .scrollContent {
     animation: scrolling4 6s linear infinite;
   }
 
   .scr {
-    height: 1000px;
+    height: 800px;
   }
 
   .quotewrap {
