@@ -35,7 +35,7 @@ export default function Title() {
             ts = 16;
           }
           P.createCanvas(w, h);
-          P.frameRate(7); // Move frameRate to setup
+          P.frameRate(24); // Move frameRate to setup
           // Optimize pixel density for performance (except small screens)
           if (w < 768) {
             P.pixelDensity(window.devicePixelRatio || 1); // Keep quality on mobile
@@ -133,7 +133,7 @@ export default function Title() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex bg-red-500 justify-center items-center">
       <div ref={sketchRef} className="canvas canvas-scr"></div>
     </div>
   );

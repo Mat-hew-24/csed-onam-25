@@ -177,6 +177,14 @@ body {
   color: #74512d;
 }
 
+.card {
+  min-height: 280px;
+  background-color: #fffce3;
+  color: black;
+  outline: none;
+  border: none;
+}
+
 .onam {
   font-family: "Inter";
   font-weight: 700;
@@ -250,6 +258,10 @@ body {
 .schedule-headings {
   font-family: "Inter";
   font-weight: 700;
+  color: #74512d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*animation smoothened?*/
 @media (max-width: 1200px) {
@@ -317,6 +329,10 @@ body {
 
   .scr-wrap {
     flex-wrap: wrap;
+  }
+
+  .venue {
+    bottom: 200px;
   }
 
   .scr-wrap-rev {

@@ -34,7 +34,7 @@ export default function Content() {
           <div className="para-3">
             <h1 className="text-[#fffce3]">Schedule</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-              <div className="p-4 border rounded-lg shadow">
+              <div className="card p-4 border rounded-lg shadow">
                 <span className="schedule-headings">Inauguration Ceremony</span>
                 <ul className="flex flex-col list-disc pl-4">
                   <li>Lighting of the lamp</li>
@@ -43,7 +43,7 @@ export default function Content() {
                 </ul>
               </div>
 
-              <div className="p-4 border rounded-lg shadow">
+              <div className="card p-4 border rounded-lg shadow">
                 <span className="schedule-headings">Cultural Programs</span>
                 <ul className="flex flex-col list-disc pl-4">
                   <li>9:30 AM – 10:30 AM | Thiruvathira Kali</li>
@@ -52,7 +52,7 @@ export default function Content() {
                   <li>12:00 PM – 12:30 PM | Games</li>
                 </ul>
               </div>
-              <div className="p-4 border rounded-lg shadow">
+              <div className="card p-4 border rounded-lg shadow">
                 <span className="schedule-headings">Inauguration Ceremony</span>
                 <ul className="flex flex-col list-disc pl-4">
                   <li>Lighting of the lamp</li>
@@ -61,7 +61,7 @@ export default function Content() {
                 </ul>
               </div>
 
-              <div className="p-4 border rounded-lg shadow">
+              <div className="card p-4 border rounded-lg shadow">
                 <span className="schedule-headings">Cultural Programs</span>
                 <ul className="flex flex-col list-disc pl-4">
                   <li>9:30 AM – 10:30 AM | Thiruvathira Kali</li>
