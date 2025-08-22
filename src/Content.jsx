@@ -6,7 +6,7 @@ export default function Content() {
           <div className="para-1 text-[#fffce3]">
             VADAMVALI • CHENDAMELAM • PAYASAM • DANCE • ONAKKALI
           </div>
-          <div className="mb-12 para-2">
+          <div className="para-2">
             <h1>CSED Onam 2025</h1>
             <div className="flex gap-40 scr-wrap-rev text-justify">
               <div>
