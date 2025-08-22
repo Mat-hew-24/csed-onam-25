@@ -19,23 +19,27 @@ export default function Title() {
         let ts = 12;
         const Cset = "#";
 
+        function chanceCanvas(w) {
+          if (w < 768) {
+            // Larger text, closer spacing for small screens
+            vs = 2;
+            ts = 6;
+          } else {
+            // Larger text, closer spacing for desktop
+            vs = 3;
+            ts = 12;
+          }
+        }
+
         P.setup = () => {
           // Use clientWidth/clientHeight for accurate sizing
           const w = sketchRef.current.clientWidth;
           const h = sketchRef.current.clientHeight;
 
           // Dynamically adjust vs and ts based on canvas size and pixel density
-          if (w < 768) {
-            // Larger text, closer spacing for small screens
-            vs = 3;
-            ts = 12;
-          } else {
-            // Larger text, closer spacing for desktop
-            vs = 4;
-            ts = 16;
-          }
+          chanceCanvas(w);
           P.createCanvas(w, h);
-          P.frameRate(24); // Move frameRate to setup
+          P.frameRate(10); // Move frameRate to setup
           // Optimize pixel density for performance (except small screens)
           if (w < 768) {
             P.pixelDensity(window.devicePixelRatio || 1); // Keep quality on mobile
@@ -64,15 +68,7 @@ export default function Title() {
           }
 
           // Recalculate vs and ts
-          if (w < 768) {
-            // Larger text, closer spacing for small screens
-            vs = 3;
-            ts = 12;
-          } else {
-            // Larger text, closer spacing for desktop
-            vs = 4;
-            ts = 16;
-          }
+          chanceCanvas(w);
 
           // Resize the image again to match new scale
           if (originalImg) {
@@ -133,8 +129,8 @@ export default function Title() {
   }, []);
 
   return (
-    <div className="flex bg-red-500 justify-center items-center">
-      <div ref={sketchRef} className="canvas canvas-scr"></div>
-    </div>
+    // <div className="flex justify-center items-center">
+    <div ref={sketchRef} className="canvas"></div>
+    // </div>
   );
 }

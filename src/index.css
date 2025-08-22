@@ -276,7 +276,7 @@ body {
 /* this one for tab */
 @media (max-width: 768px) {
   .canvas {
-    height: 40vh; /* Changed from 20vh to 30vh */
+    height: 20vh; /* Changed from 20vh to 30vh */
   }
 
   .venue {
