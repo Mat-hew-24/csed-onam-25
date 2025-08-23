@@ -53,6 +53,26 @@ body {
   max-width: 100vw;
 }
 
+.list-disc {
+  font-size: 18px;
+  gap: 5px;
+}
+
+.card-btn {
+  @apply bg-[#74512d] cursor-pointer text-lg text-[#fffce3] border-3 border-[#fffce3] font-bold transition-transform duration-150 ease-in-out hover:scale-105 hover:bg-[#85623E];
+  padding: clamp(8px, 1.2vw, 14px) clamp(14px, 2.5vw, 24px);
+  height: clamp(42px, 6vw, 56px);
+  width: clamp(140px, 18vw, 220px);
+  max-width: calc(100% - 20px);
+  font-size: clamp(12px, 1.6vw, 16px);
+  margin: 10px auto 10px auto;
+  white-space: nowrap;
+  font-family: "Montserrat Alternates";
+  font-weight: 900;
+  display: block;
+  text-align: center;
+}
+
 .para-1 {
   font-family: "Inter";
   font-weight: 600;
@@ -259,6 +279,7 @@ body {
   font-family: "Inter";
   font-weight: 700;
   color: #74512d;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;

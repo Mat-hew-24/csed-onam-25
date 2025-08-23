@@ -2,13 +2,13 @@ export default function Content() {
   return (
     <>
       <div>
-        <div className="bg-[#74512D] text-white text-center relative opacity-100 flex flex-col gap-[41px] pt-[32px] pb-[32px] pl-[65px] pr-[65px] bottom-0 left-0 right-0 content-scr">
+        <div className="bg-[#74512D] text-white relative opacity-100 flex flex-col gap-[41px] pt-[32px] pb-[32px] pl-[65px] pr-[65px] bottom-0 left-0 right-0 ">
           <div className="para-1 text-[#fffce3]">
             VADAMVALI • CHENDAMELAM • PAYASAM • DANCE • ONAKKALI
           </div>
-          <div className="para-2">
-            <h1>CSED Onam 2025</h1>
-            <div className="flex gap-40 scr-wrap-rev text-justify">
+          <div className="mb-12 para-2">
+            <h1>CSEA Onam 2025</h1>
+            <div className="flex gap-40 scr-wrap-rev">
               <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
                 laudantium libero pariatur quod, fuga rerum ea nemo, facilis
@@ -69,6 +69,9 @@ export default function Content() {
                   <li>11:00 AM – 12:00 PM | Skits/Drama</li>
                   <li>12:00 PM – 12:30 PM | Games</li>
                 </ul>
+                <div className="flex justify-center items-center">
+                  <button className="card-btn">Add to Calender</button>
+                </div>
               </div>
             </div>
           </div>
