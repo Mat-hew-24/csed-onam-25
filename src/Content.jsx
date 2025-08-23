@@ -43,7 +43,7 @@ export default function Content() {
           <div className="para-3">
             <h1 className="text-[#fffce3]">Schedule</h1>
             <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-              <div className="card p-4 border rounded-lg shadow">
+              <div className="card p-4 border rounded-xl shadow ">
                 <div>
                   <span className="schedule-headings">
                     Inauguration Ceremony
@@ -60,8 +60,7 @@ export default function Content() {
                   </button>
                 </div>
               </div>
-
-              <div className="card p-4 border rounded-lg shadow">
+              <div className="card p-4 border rounded-xl shadow">
                 <div>
                   <span className="schedule-headings">Cultural Programs</span>
                   <ul className="flex flex-col list-disc pl-4">
@@ -77,7 +76,7 @@ export default function Content() {
                   </button>
                 </div>
               </div>
-              <div className="card p-4 border rounded-lg shadow">
+              <div className="card p-4 border rounded-xl shadow">
                 <div>
                   <span className="schedule-headings">
                     Inauguration Ceremony
@@ -94,8 +93,7 @@ export default function Content() {
                   </button>
                 </div>
               </div>
-
-              <div className="card p-4 border rounded-lg shadow">
+              <div className="card p-4 border rounded-xl shadow">
                 <div>
                   <span className="schedule-headings">Cultural Programs</span>
                   <ul className="flex flex-col list-disc pl-4">
@@ -113,7 +111,12 @@ export default function Content() {
               </div>
             </div>
           </div>
-          <div className="para-4 flex justify-center">
+          <div
+            className="para-4 flex justify-center cursor-pointer"
+            onClick={() =>
+              window.open("https://www.instagram.com/_su.ryaa/", "_blank")
+            }
+          >
             <span className="quote-wrap">
               vann<span className="onam">onam</span>, thakarth
               <span className="onam">onam</span>, pwolich
