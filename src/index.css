@@ -63,7 +63,6 @@ body {
   padding: clamp(8px, 1.2vw, 14px) clamp(14px, 2.5vw, 24px);
   height: clamp(42px, 6vw, 56px);
   width: clamp(140px, 18vw, 220px);
-  max-width: calc(100% - 20px);
   font-size: clamp(12px, 1.6vw, 16px);
   margin: 10px auto 10px auto;
   white-space: nowrap;
@@ -74,16 +73,15 @@ body {
 }
 
 .para-1 {
-  font-family: "Inter";
-  font-weight: 600;
-  font-style: Semi Bold;
-  font-size: 24px;
   leading-trim: NONE;
   line-height: 100%;
   letter-spacing: 15%;
   text-align: center;
   white-space: nowrap;
-  will-change: transform;
+  font-family: "Inter";
+  font-weight: 600;
+  font-style: Semi Bold;
+  font-size: clamp(16px, 3vw, 24px);
 }
 .para-2 {
   width: 100%;
@@ -146,18 +144,6 @@ body {
   letter-spacing: 0%;
 }
 
-.para-1 {
-  font-family: "Inter";
-  font-weight: 600;
-  font-style: Semi Bold;
-  font-size: clamp(16px, 3vw, 24px);
-  line-height: 100%;
-  letter-spacing: 15%;
-  text-align: center;
-  white-space: nowrap;
-  will-change: transform;
-}
-
 .para-4 {
   font-family: "Inter";
   font-weight: 400;
@@ -173,6 +159,15 @@ body {
 
 .quotewrap {
   white-space: nowrap;
+}
+
+.csea {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 100%;
+  color: var(--brown, #74512d);
 }
 
 .onam {
@@ -203,6 +198,9 @@ body {
   color: black;
   outline: none;
   border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .onam {
@@ -249,12 +247,6 @@ body {
   position: relative;
 }
 
-.scrollContent {
-  white-space: nowrap;
-  display: inline-block;
-  will-change: transform;
-}
-
 .fixImg {
   bottom: -70px;
 }
@@ -279,16 +271,13 @@ body {
   font-family: "Inter";
   font-weight: 700;
   color: #74512d;
-  font-size: 30px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 /*animation smoothened?*/
 @media (max-width: 1200px) {
-  .para-1 {
-    animation: scrolling1 8s linear infinite;
-  }
   .fixImg {
     bottom: -60px;
   }
@@ -303,6 +292,7 @@ body {
   .venue {
     flex-direction: column;
     bottom: 0px;
+    font-size: 18px;
   }
 
   .scr {
@@ -311,14 +301,6 @@ body {
 
   .venue {
     bottom: 300px;
-  }
-
-  .scrollContent {
-    animation: scrolling2 8s linear infinite;
-  }
-
-  .para-1 {
-    animation: scrolling3 8s linear infinite;
   }
 
   .btn-1,
@@ -340,12 +322,12 @@ body {
     height: 20vh;
   }
 
-  .content-scr {
-    padding: 32px 25px 32px 25px;
+  .csea {
+    font-size: 20px;
   }
 
-  .scrollContent {
-    animation: scrolling4 6s linear infinite;
+  .content-scr {
+    padding: 32px 25px 32px 25px;
   }
 
   .scr {
@@ -366,10 +348,6 @@ body {
 
   .scr-wrap-rev {
     flex-wrap: wrap-reverse;
-  }
-
-  .para-1 {
-    animation: scrolling4 6s linear infinite;
   }
 
   .headerBox {
@@ -429,14 +407,6 @@ body {
   width: 1079px;
   height: 454px;
 } */
-.csea {
-  font-family: "Montserrat Alternates";
-  font-weight: 600;
-  font-style: normal;
-  font-size: 30px;
-  line-height: 100%;
-  color: var(--brown, #74512d);
-}
 
 .buttons {
   display: flex;
@@ -449,41 +419,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-}
-
-@keyframes scrolling1 {
-  from {
-    transform: translateX(-120%);
-  }
-  to {
-    transform: translateX(120%);
-  }
-}
-
-@keyframes scrolling2 {
-  from {
-    transform: translateX(-160%);
-  }
-  to {
-    transform: translateX(160%);
-  }
-}
-
-@keyframes scrolling3 {
-  from {
-    transform: translateX(-180%);
-  }
-  to {
-    transform: translateX(180%);
-  }
-}
-
-@keyframes scrolling4 {
-  from {
-    transform: translateX(-250%);
-  }
-  to {
-    transform: translateX(250%);
   }
 }
