@@ -111,28 +111,37 @@ export default function Content() {
               </div>
             </div>
           </div>
-          <div
-            className="para-4 flex justify-center cursor-pointer"
-            onClick={() =>
-              window.open("https://www.instagram.com/_su.ryaa/", "_blank")
-            }
-          >
-            <span className="quote-wrap">
-              vann<span className="onam">onam</span>, thakarth
-              <span className="onam">onam</span>, pwolich
-              <span className="onam">onam</span>
-            </span>
+          <div className="para-4 flex justify-center cursor-pointer">
+            <a href="https://www.instagram.com/_su.ryaa/" target="_blank">
+              <span className="quote-wrap">
+                vann<span className="onam">onam</span>, thakarth
+                <span className="onam">onam</span>, pwolich
+                <span className="onam">onam</span>
+              </span>
+            </a>
           </div>
           <div className="para-5 flex justify-center flex-wrap">
-            <button className="btn-1 flex justify-center items-center">
-              instagram
-            </button>
-            <button className="btn-1 flex justify-center items-center">
-              youtube
-            </button>
-            <button className="btn-1 flex justify-center items-center ">
-              minerva
-            </button>
+            <a
+              href="https://www.instagram.com/csea.nitc?igsh=MTl3ajg5MnoybDdueA=="
+              target="_blank"
+            >
+              <button className="btn-1 flex justify-center items-center">
+                instagram
+              </button>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+              target="_blank"
+            >
+              <button className="btn-1 flex justify-center items-center">
+                youtube
+              </button>
+            </a>
+            <a href=" https://minerva.nitc.ac.in/" target="_blank">
+              <button className="btn-1 flex justify-center items-center ">
+                minerva
+              </button>
+            </a>
           </div>
         </div>
       </div>
