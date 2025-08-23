@@ -130,8 +130,8 @@ export default function Content() {
               </button>
             </a>
             <a
-              href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
-              target="_blank"
+            // href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+            // target="_blank"
             >
               <button className="btn-1 flex justify-center items-center">
                 youtube
