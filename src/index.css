@@ -319,7 +319,8 @@ body {
 /* THIS ONE IS SM*/
 @media (max-width: 600px) {
   .canvas {
-    height: 16vh;
+    width: 115vw;
+    height: 18vh;
   }
 
   .csea {

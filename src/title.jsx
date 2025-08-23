@@ -21,11 +21,11 @@ export default function Title() {
 
         function chanceCanvas(w) {
           if (w < 768) {
-            // Larger text, closer spacing for small screens
+            //  small screens
             vs = 1.5;
-            ts = 5;
+            ts = 5.5;
           } else {
-            // Larger text, closer spacing for desktop
+            // desktop
             vs = 2;
             ts = 9;
           }
