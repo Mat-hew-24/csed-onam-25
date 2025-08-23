@@ -4,10 +4,10 @@ export default function Content() {
   return (
     <>
       <div>
-        <div className="bg-[#74512D] text-white relative opacity-100 flex flex-col gap-[41px] pt-[32px] pb-[32px] pl-[65px] pr-[65px] bottom-0 left-0 right-0 ">
+        <div className="bg-[#74512D] text-white relative opacity-100 flex flex-col gap-[41px] pt-[32px] pb-[32px] pl-[35px] pr-[35px] bottom-0 left-0 right-0 ">
           <Marquee
             gradient={false}
-            speed={150}
+            speed={100}
             pauseOnHover
             className="para-1 text-[#fffce3] text-lg font-bold overflow-hidden [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >

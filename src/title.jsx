@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import imgSrc from "/image.png"; // put image.png in /public folder
+import imgSrc from "/image_2.png"; // put image.png in /public folder
 
 export default function Title() {
   const sketchRef = useRef(null);
@@ -22,12 +22,12 @@ export default function Title() {
         function chanceCanvas(w) {
           if (w < 768) {
             // Larger text, closer spacing for small screens
-            vs = 2;
-            ts = 6;
+            vs = 1.5;
+            ts = 5;
           } else {
             // Larger text, closer spacing for desktop
-            vs = 3;
-            ts = 12;
+            vs = 2;
+            ts = 9;
           }
         }
 

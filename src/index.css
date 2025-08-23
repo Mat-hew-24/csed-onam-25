@@ -248,7 +248,7 @@ body {
 }
 
 .fixImg {
-  bottom: -70px;
+  bottom: -50px;
 }
 
 .canvas {
@@ -319,7 +319,7 @@ body {
 /* THIS ONE IS SM*/
 @media (max-width: 600px) {
   .canvas {
-    height: 20vh;
+    height: 16vh;
   }
 
   .csea {
@@ -393,7 +393,7 @@ body {
   }
 
   .fixImg {
-    bottom: -25px;
+    bottom: -30px;
   }
 }
 

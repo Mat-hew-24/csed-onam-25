@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 export default function Header() {
   return (
     <>
-      <Marquee speed={150} gradient={false}>
+      <Marquee speed={100} gradient={false}>
         <div className="flex items-center gap-6">
           <img
             src="b94063ae9050f2fe1a30a9a4912c15fcbea3d5a0 (1).png"
