@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useEffect } from "react";
-import imgSrc from "/image_2.png"; // put image.png in /public folder
+import imgSrc from "/image_3.png"; // put image.png in /public folder
 
 export default function Title() {
   const sketchRef = useRef(null);
@@ -108,10 +108,16 @@ export default function Title() {
                 let txt = "";
                 if (Cset[q] === "#") {
                   txt = P.random([0, 1]);
+                  P.text(txt, (x * vs + 2) | 0, (y * vs + 8) | 0);
+                } else if (Cset[q] === "@") {
+                  txt = P.random(["*", "|"]);
+                  P.text(txt, (x * vs + 2) | 0, (y * vs + 8) | 0);
+                } else if (Cset[q] === "&") {
+                  txt = "k";
+                  P.text(txt, (x * vs + 2) | 0, (y * vs + 8) | 0);
                 }
 
                 // Use integer positions for crisp text
-                P.text(txt, (x * vs + 2) | 0, (y * vs + 8) | 0);
               }
             }
           }
