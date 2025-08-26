@@ -19,21 +19,19 @@ export default function Content() {
             <h1>CSEA Onam 2025</h1>
             <div className="flex gap-40 text-justify scr-wrap-rev">
               <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
-                laudantium libero pariatur quod, fuga rerum ea nemo, facilis
-                labore aliquam eos id magni excepturi culpa optio quisquam eaque
-                non enim? Repellendus, quisquam iste alias quo reiciendis nemo
-                tenetur illo! Obcaecati nobis ab libero in, omnis aliquid,
-                provident suscipit placeat laboriosam sit unde repellat sunt
-                eaque. Ipsam molestiae repellendus quidem nobis. Eius repellat,
-                veritatis non maxime dolore excepturi nam quaerat illo ad
-                temporibus atque dolorem tempora nihil corrupti earum cum?
-                Quidem repudiandae sint at, nemo placeat voluptas ex eum ullam
-                architecto. Facilis itaque error molestiae consectetur, mollitia
-                corporis ducimus voluptatem unde, facere corrupti optio
-                pariatur. Maiores minus voluptates nobis asperiores animi
-                praesentium quo, obcaecati molestiae quidem quae fugiat officia
-                magni repellendus.
+                Onam is the vibrant harvest festival of Kerala, celebrated with
+                great enthusiasm and cultural pride. It marks the legendary
+                homecoming of King Mahabali, whose reign was believed to be a
+                golden era of prosperity, equality, and happiness. During this
+                festival, homes are beautifully decorated with pookkalam,
+                intricate floral rangolis that symbolize harmony and joy.
+                Families come together to prepare the grand Onam Sadhya, a
+                traditional vegetarian feast served on banana leaves, consisting
+                of many delicious dishes. Cultural events such as Vallam Kali
+                (snake boat races), Pulikali (tiger dance), Kaikottikali (folk
+                dances), and music performances fill the atmosphere with
+                festivity. Onam truly unites communities, spreading love,
+                gratitude, and togetherness.
               </div>
               <div>
                 <img src="" alt="maveli" />
