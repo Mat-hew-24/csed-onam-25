@@ -39,72 +39,40 @@ export default function Content() {
             </div>
           </div>
           <div className="para-3">
-            <h1 className="text-[#fffce3]">Schedule</h1>
-            <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-              <div className="card p-4 border rounded-xl shadow ">
-                <div>
-                  <span className="schedule-headings">
-                    Inauguration Ceremony
-                  </span>
-                  <ul className="flex flex-col list-disc pl-4">
-                    <li>Lighting of the lamp</li>
-                    <li>Traditional invocation song or prayer</li>
-                    <li>Welcome speech</li>
-                  </ul>
+            <h1 className="text-[#fffce3] lg:ml-25">Schedule</h1>
+            <div className="flex justify-center w-full">
+              <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
+                <div className="card p-8 border rounded-xl shadow ">
+                  <div>
+                    <span className="schedule-headings">
+                      Inauguration Ceremony
+                    </span>
+                    <ul className="flex flex-col list-disc pl-4">
+                      <li>Lighting of the lamp</li>
+                      <li>Traditional invocation song</li>
+                      <li>Welcome speech</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="flex justify-center items-center mt-auto">
-                  <button className="card-btn flex flex-wrap">
-                    <span>Add to Calender</span>
-                  </button>
+                <div className="card p-8 border rounded-xl shadow">
+                  <div>
+                    <span className="schedule-headings">Cultural Programs</span>
+                    <ul className="flex flex-col list-disc pl-4">
+                      <li>6:30 PM – 7:30 PM | Cultural Events</li>
+                      <li>9:00 PM – 10:00 PM | Chendamelam</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="card p-4 border rounded-xl shadow">
-                <div>
-                  <span className="schedule-headings">Cultural Programs</span>
-                  <ul className="flex flex-col list-disc pl-4">
-                    <li>9:30 AM – 10:30 AM | Thiruvathira Kali</li>
-                    <li>10:30 AM – 11:00 AM | Onappattu</li>
-                    <li>11:00 AM – 12:00 PM | Skits/Drama</li>
-                    <li>12:00 PM – 12:30 PM | Games</li>
-                  </ul>
-                </div>
-                <div className="flex justify-center items-center mt-auto">
-                  <button className="card-btn flex flex-wrap">
-                    <span>Add to Calender</span>
-                  </button>
-                </div>
-              </div>
-              <div className="card p-4 border rounded-xl shadow">
-                <div>
-                  <span className="schedule-headings">
-                    Inauguration Ceremony
-                  </span>
-                  <ul className="flex flex-col list-disc pl-4">
-                    <li>Lighting of the lamp</li>
-                    <li>Traditional invocation song or prayer</li>
-                    <li>Welcome speech</li>
-                  </ul>
-                </div>
-                <div className="flex justify-center items-center mt-auto">
-                  <button className="card-btn flex flex-wrap">
-                    <span>Add to Calender</span>
-                  </button>
-                </div>
-              </div>
-              <div className="card p-4 border rounded-xl shadow">
-                <div>
-                  <span className="schedule-headings">Cultural Programs</span>
-                  <ul className="flex flex-col list-disc pl-4">
-                    <li>9:30 AM – 10:30 AM | Thiruvathira Kali</li>
-                    <li>10:30 AM – 11:00 AM | Onappattu</li>
-                    <li>11:00 AM – 12:00 PM | Skits/Drama</li>
-                    <li>12:00 PM – 12:30 PM | Games</li>
-                  </ul>
-                </div>
-                <div className="flex justify-center items-center mt-auto">
-                  <button className="card-btn flex flex-wrap">
-                    <span>Add to Calender</span>
-                  </button>
+                <div className="card p-8 border rounded-xl shadow">
+                  <div>
+                    <span className="schedule-headings">Games</span>
+                    <ul className="flex flex-col list-disc pl-4">
+                      <li>7:00 PM – 8:00 PM | Sundarikoru Pottuthodal</li>
+                      <li>7:00 PM – 8:00 PM | Truth or Dare</li>
+                      <li>7:30 PM – 8:00 PM | Sari-udukkal for Boys</li>
+                      <li>8:00 PM – 9:30 PM | Vadamvali</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -132,7 +100,7 @@ export default function Content() {
             // target="_blank"
             >
               <button className="btn-1 flex justify-center items-center">
-                youtube
+                trailer
               </button>
             </a>
             <a href=" https://minerva.nitc.ac.in/" target="_blank">

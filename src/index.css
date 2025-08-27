@@ -54,7 +54,7 @@ body {
 }
 
 .list-disc {
-  font-size: 18px;
+  font-size: 22px;
   gap: 5px;
 }
 
@@ -271,7 +271,7 @@ body {
   font-family: "Inter";
   font-weight: 700;
   color: #74512d;
-  font-size: 25px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
