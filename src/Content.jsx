@@ -4,7 +4,7 @@ export default function Content() {
   return (
     <>
       <div>
-        <div className="bg-[#74512D] text-white relative opacity-100 flex flex-col gap-[41px] pt-[32px] pb-[32px] pl-[35px] pr-[35px] bottom-0 left-0 right-0 ">
+        <div className="bg-[#74512D] text-white relative opacity-100 flex flex-col gap-[41px] pt-[32px] pb-[32px] pl-[25px] pr-[25px] bottom-0 left-0 right-0 ">
           <Marquee
             gradient={false}
             speed={100}
@@ -17,8 +17,8 @@ export default function Content() {
 
           <div className="mb-12 para-2">
             <h1>CSEA Onam 2025</h1>
-            <div className="flex gap-40 text-justify scr-wrap-rev">
-              <div>
+            <div className="flex items-center md:gap-40 text-justify scr-wrap-rev lg:text-2xl sm:text-lg lg:w-screen lg:pr-25">
+              <div className="md:max-w-[45vw] lg:max-w-[60vw]">
                 Onam is the vibrant harvest festival of Kerala, celebrated with
                 great enthusiasm and cultural pride. It marks the legendary
                 homecoming of King Mahabali, whose reign was believed to be a
@@ -34,13 +34,17 @@ export default function Content() {
                 gratitude, and togetherness.
               </div>
               <div>
-                <img src="" alt="maveli" />
+                <img
+                  src="d7158615c4d018f6858309393cb96f036b7b2fa2.png"
+                  alt="maveli"
+                  className="w-[400px] h-[400px] object-contain"
+                />
               </div>
             </div>
           </div>
           <div className="para-3">
-            <h1 className="text-[#fffce3] lg:ml-25">Schedule</h1>
-            <div className="flex justify-center w-full">
+            <h1 className="text-[#fffce3]">Schedule</h1>
+            <div className="flex justify-center w-full lg:w-screen">
               <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15">
                 <div className="card p-8 border rounded-xl shadow ">
                   <div>

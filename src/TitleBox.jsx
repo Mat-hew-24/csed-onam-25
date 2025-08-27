@@ -6,7 +6,7 @@ export default function TitleBox() {
       <div className="mt-16 md:mt-32 relative">
         <div className="onam-box flex flex-col justify-center items-center">
           <div className="flex justify-start w-[100vw] pl-8 md:pl-25 pt-20">
-            <p className="csea">CSED Presents</p>
+            <p className="csea">CSEA Presents</p>
           </div>
           <div>
             <Title></Title>
