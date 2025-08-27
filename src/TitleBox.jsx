@@ -12,12 +12,16 @@ export default function TitleBox() {
             <Title></Title>
           </div>
           <div className="buttons">
-            <button className="btn-1 flex justify-center items-center">
-              contribute
-            </button>
-            <button className="btn-2 flex justify-center items-center">
-              program reg
-            </button>
+            <a href="https://forms.gle/9qbSp5kFviTrYeHE6" target="_blank">
+              <button className="btn-1 flex justify-center items-center">
+                contribute
+              </button>
+            </a>
+            <a href="https://forms.gle/dej1ZGdbdQJsQXDB7" target="_blank">
+              <button className="btn-2 flex justify-center items-center">
+                program reg
+              </button>
+            </a>
           </div>
         </div>
       </div>
