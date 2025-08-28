@@ -62,8 +62,7 @@ export default function Content() {
                   <div>
                     <span className="schedule-headings">Cultural Programs</span>
                     <ul className="flex flex-col list-disc pl-4">
-                      <li>6:30 PM – 7:30 PM | Cultural Events</li>
-                      <li>9:00 PM – 10:00 PM | Chendamelam</li>
+                      <li>6:30 PM – 10:00 PM | Cultural Events</li>
                     </ul>
                   </div>
                 </div>
