@@ -80,6 +80,25 @@ export default function Content() {
               </div>
             </div>
           </div>
+          <div className="para-3">
+            <h1 className="text-[#fffce3] pt-10">Sponsors</h1>
+            <div className="flex justify-center items-center gap-8 mt-8 flex-wrap">
+              <div className="sponsor-card p-4">
+                <img
+                  src="sp_1.png"
+                  alt="Sponsor 1"
+                  className="w-[300px] h-[300px] object-contain"
+                />
+              </div>
+              <div className="sponsor-card p-4">
+                <img
+                  src="sp_2.png"
+                  alt="Sponsor 2"
+                  className="w-[300px] h-[300px] object-contain"
+                />
+              </div>
+            </div>
+          </div>
           <div className="para-4 flex justify-center cursor-pointer">
             <a href="https://www.instagram.com/_su.ryaa/" target="_blank">
               <span className="quote-wrap">
